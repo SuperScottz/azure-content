@@ -1,5 +1,5 @@
 <properties
-	pageTitle="How to update Azure Linux Agent "
+	pageTitle="How to update Azure Linux Agent to latest version from Github"
 	description="Learn how to update Azure Linux Agent from Github for your Linux VM in Azure."
 	services="virtual-machines"
 	documentationCenter=""
@@ -13,7 +13,7 @@
 	ms.tgt_pltfrm="vm-linux"
 	ms.devlang="na"
 	ms.topic="article"
-	ms.date="3/23/2015"
+	ms.date="03/23/2015"
 	ms.author="mingzhan"/>
 
 

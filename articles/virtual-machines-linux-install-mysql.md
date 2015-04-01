@@ -1,5 +1,5 @@
 <properties
-	pageTitle="HOW TO INSTALL MYSQL ON AZURE "
+	pageTitle="How to install MySQL on Azure "
 	description="Learn how to install the MySQL stack on a Linux virtual machine (VM) in Azure. You can install on Ubuntu or CentOS."
 	services="virtual-machines"
 	documentationCenter=""
@@ -13,11 +13,11 @@
 	ms.tgt_pltfrm="vm-linux"
 	ms.devlang="na"
 	ms.topic="article"
-	ms.date="3/12/2015"
+	ms.date="03/12/2015"
 	ms.author="mingzhan"/>
 
 
-#How to Install MySQL on Azure
+#How to install MySQL on Azure
 
 In this topic,tt is assumed that the reader already has an Azure account. If not, it is recommended to sign up by visiting [Azure](http://azure.microsoft.com).##Creating a VM image in Microsoft Azure.Here we will create a new VM from Microsoft Azure management portal.###Generate “SSH Authentication Key”We will need the SSH key to access the Azure portal. 
 
