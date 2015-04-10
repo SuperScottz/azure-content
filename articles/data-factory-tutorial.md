@@ -27,7 +27,7 @@ In this walkthrough, we will collect sample logs, process and enrich them with r
 ## Getting ready for the tutorial
 1.	Read [Introduction to Azure Data Factory][adfintroduction] to get an overview of Azure Data Factory and understanding of the top level concepts.
 2.	You must have an Azure subscription to perform this tutorial. For information about obtaining a subscription, see [Purchase Options] [azure-purchase-options], [Member Offers][azure-member-offers], or [Free Trial][azure-free-trial].
-3.	You must download and install [Azure PowerShell][download-azure-powershell] on your computer. You will Data Factory cmdlets to upload sample data and pig/hive scripts to your blob storage. 
+3.	You must download and install [Azure PowerShell][download-azure-powershell] on your computer. You will execute Data Factory cmdlets to upload sample data and pig/hive scripts to your blob storage. 
 2.	**(recommended)** Review and practice the tutorial in the [Get started with Azure Data Factory][adfgetstarted] article for a simple tutorial to get familiar with the portal and cmdlets.
 3.	**(recommended)** Review and practice the walkthrough in the [Use Pig and Hive with Azure Data Factory][usepigandhive] article for a walkthrough on creating a pipeline to move data from on-premises data source to an Azure blob store.
 4.	Download [ADFWalkthrough][adfwalkthrough-download] files to **C:\ADFWalkthrough** folder **preserving the folder structure**:
@@ -189,7 +189,7 @@ In this step, you create an Azure data factory named **LogProcessingFactory**.
  
 ## <a name="MainStep3"></a> Step 3: Create linked services
 
-> [ACOM.NOTE] This articles uses the Azure Portal, specifically the Data Factory Editor, to create linked services, tables, and pipelines. See [Tutorial using Azure PowerShell][adftutorial-using-powershell] if you want to perform this tutorial using Azure PowerShell. 
+> [AZURE.NOTE] This article uses the Azure Portal, specifically the Data Factory Editor, to create linked services, tables, and pipelines. See [Tutorial using Azure PowerShell][adftutorial-using-powershell] if you want to perform this tutorial using Azure PowerShell. 
 
 In this step, you will create the following linked services:
 
@@ -200,7 +200,7 @@ In this step, you will create the following linked services:
 
 ### Create StorageLinkedService and HDInsightStorageLinkedService
 
-1.	In the **DATA FACTORY** blade, clcik **Author and deploy** tile to launch the **Editor** for the data factory.
+1.	In the **DATA FACTORY** blade, click **Author and deploy** tile to launch the **Editor** for the data factory.
 
 	![Author and Deploy Tile][image-author-deploy-tile] 
 
@@ -210,7 +210,7 @@ In this step, you will create the following linked services:
 	
 	![Editor New data store button][image-editor-newdatastore-button]
 
-3. Replace **<accountname\>** and **<accountkey\>** with the account name and account key values for your Azure storage account.
+3. Replace **accountname** and **accountkey** with the account name and account key values for your Azure storage account.
 
 	![Editor Blob Storage JSON][image-editor-blob-storage-json]    
 	
@@ -224,8 +224,8 @@ In this step, you will create the following linked services:
 
 ### Create AzureSqlLinkedService
 1. In the **Data Factory Editor** , click **New data store** button on the toolbar and select **Azure SQL database** from the drop down menu. You should see the JSON template for creating the Azure SQL linked service in the right pane.
-2. Replace **<servername\>**, **<username\>@<servername\>**, and **<password\>** with names of your Azure SQL server, user account, and  password.  
-3. Replace **<databasename\>** with **MarketingCampaigns**. This is the Azure SQL database created by the scripts you ran in Step 1. You should confirm that this database was indeed created by the scripts (in case there were errors). 
+2. Replace **servername**, **username@servername**, and **password** with names of your Azure SQL server, user account, and  password.  
+3. Replace **databasename** with **MarketingCampaigns**. This is the Azure SQL database created by the scripts you ran in Step 1. You should confirm that this database was indeed created by the scripts (in case there were errors). 
 3. Click **Deploy** on the toolbar to create and deploy the AzureSqlLinkedService.
 
 ### Create HDInsightLinkedService
@@ -319,7 +319,7 @@ In this step, you will create the following pipelines:
         "end": "2014-05-05T00:00:00Z",
         "isPaused": false
 
-	[ACOM.NOTE] Note that the start and end times are set to 05/01/2014 and 05/05/2014 because the sample data in this walkthrough is from 05/01/2014 to 05/05/2014. 
+	[AZURE.NOTE] Note that the start and end times are set to 05/01/2014 and 05/05/2014 because the sample data in this walkthrough is from 05/01/2014 to 05/05/2014. 
  
 3. Click **Deploy** on the toolbar to create and deploy the pipeline. Confirm that you see the **PIPELINE CREATED SUCCESSFULLY** message on the title bar of the Editor.
 4. Repeat steps 1-3 with the content from the following files: 
